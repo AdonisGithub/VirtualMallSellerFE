@@ -32,7 +32,7 @@ const SellermobileLoginPage = () => {
         <div className="flex w-full  justify-center items-center">
             <div className="w-full h-full flex items-center justify-center ">
                 <div className=" w-[280px]">
-                    <a href='/sellerhomepage'className="font-bold text-3xl">x</a>
+                    <a href='/'className="font-bold text-3xl">x</a>
                     <span className="flex  mt-[114px] items-center justify-center mb-[24px]  font-bold text-3xl tracking-tight text-black ">
                         LOGO
                     </span>

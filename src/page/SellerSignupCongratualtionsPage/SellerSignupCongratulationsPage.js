@@ -26,7 +26,7 @@ const SellerSignupCongratuationsPage = () =>{
                                 Please contact us for more information at <span className="text-[#FC0841]">vrmallsolutions.</span>
                             </div>
                         </div>
-                        <a href="/sellerhomepage" className="text-sm mt-3 hover:text-[#FC0841]">
+                        <a href="/" className="text-sm mt-3 hover:text-[#FC0841]">
                             Go Back to Homepage
                         </a>
                     </div>
