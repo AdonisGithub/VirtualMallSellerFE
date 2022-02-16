@@ -1,6 +1,6 @@
 import { userConstants } from '../_constants';
 import axios from "axios";
-import  {SuccessAlert, DefaultAlert} from "../components/common/ToastAlert";
+import  {SuccessAlert} from "../components/common/ToastAlert";
 import {ErrorAlert} from "../components/common/ToastAlert";
 const API_URL = "https://theinfiniteplaza.com";
 //const API_URL = "http://localhost:8080";

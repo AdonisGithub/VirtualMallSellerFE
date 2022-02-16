@@ -2,6 +2,7 @@ import React, { useState} from "react";
 import { useDispatch} from "react-redux";
 import { useNavigate } from "react-router-dom";
 import * as Actions from "../../_actions";
+import logo_mobile from "../../assets/images/logo_mobile.png";
 
 const SellermobileLoginPage = () => {
     const [seller, setSeller] = useState({
@@ -28,13 +29,13 @@ const SellermobileLoginPage = () => {
       };
 
   return (
-    <div className="h-screen flex lg:hidden bg-[#EDE5EF]">
+    <div className="h-screen flex bg-[#EDE5EF]">
         <div className="flex w-full  justify-center items-center">
             <div className="w-full h-full flex items-center justify-center ">
                 <div className=" w-[280px]">
-                    <a href='/'className="font-bold text-3xl">x</a>
-                    <span className="flex  mt-[114px] items-center justify-center mb-[24px]  font-bold text-3xl tracking-tight text-black ">
-                        LOGO
+                    <a href='/sellerhomepage'className="font-bold text-3xl">x</a>
+                    <span className="flex  mt-[114px] items-center justify-center mb-[24px]  ">
+                        <img src={logo_mobile} alt="logo" className="flex  h-[52px] w-[67px]"/>
                     </span>
                     <h1 className="text-black font-bold text-2xl mb-[19px] flex items-center justify-center">
                         Log in

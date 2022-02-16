@@ -4,9 +4,10 @@ import { useDispatch} from "react-redux";
 import * as Actions from "../../_actions";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import { Header1 } from "../../components/header1";
 import {WarningAlert} from "../../components/common/ToastAlert";
 import sellerimg from "../../assets/images/seller.png"
+import logo_laptop from "../../assets/images/logo_laptop.png";
+import logo_mobile from "../../assets/images/logo_mobile.png";
 
 
 const SellerSignupPage = () => {
@@ -49,28 +50,28 @@ const SellerSignupPage = () => {
   };
   return (
     <div>
-      <div className="lg:hidden">
-        <Header1/>
-      </div>
       <div className="bg-[#1B0C4B] lg:bg-transparent">
         <div className="flex min-h-screen relative">
           <div className="flex items-center">
             <img src={sellerimg} alt="" className="absolute  right-0 z-0"/>
           </div>
           <div className="flex absolute md:mt-[43px] ml-[45%] md:ml-[130px] xl:ml-[159px] z-10">
-            <a href='/' className="hidden md:flex font-bold text-3xl tracking-tight text-black">
-              LOGO
+            <a href='/' className="hidden lg:flex">
+              <img src={logo_laptop} alt="logo" className="hidden lg:flex h-[44px] w-[150px] 2xl:h-[70px] 2xl:w-[258px] mr-[30px]"/>
             </a>
           </div>
           <div className="flex w-full md:w-1/2 justify-center items-center  lg:mt-[95px] mx-16 z-10">
             <div className="w-full h-full flex items-center justify-center ">
               <div className="">
-                <h1 className="text-white lg:text-black  text-2xl mb-3 flex items-center justify-center">
+                <a href='/'className="flex lg:hidden items-center justify-center mb-3 mt-[30px]">
+                  <img src={logo_mobile} alt="logo" className="flex lg:hidden h-[52px] w-[67px]"/>
+                </a>
+                <h1 className="text-white lg:text-black  font-bold text-2xl mb-3 flex items-center justify-center">
                   Create An Account
                 </h1>
                 <div className="flex mb-3 items-center justify-center">
                   <p className="text-white lg:text-black">Already an user?</p>&nbsp;&nbsp;
-                  <a href="/" className="text-red-600 hover:text-white lg:hover:text-black ">
+                  <a href="/sellermobilelogin" className="text-red-600 hover:text-white lg:hover:text-black ">
                     Sign in
                   </a>
                 </div>
@@ -79,7 +80,7 @@ const SellerSignupPage = () => {
                     <div className="w-full">
                       <h1 className="text-white lg:text-black text-sm">Full Name </h1>
                       <input
-                        className="border  rounded-md py-1 px-1 mb-2 bg-white text-black"
+                        className="border border-black rounded-md py-1 px-1 mb-2 bg-white text-black"
                         style={{ width: "inherit" }}
                         type="text"
                         name="fullName"
@@ -92,7 +93,7 @@ const SellerSignupPage = () => {
                     <div className="w-full">
                       <h1 className="text-white lg:text-black text-sm">Last Name </h1>
                       <input
-                        className="border  rounded-md py-1 px-1 mb-2 bg-white text-black"
+                        className="border border-black rounded-md py-1 px-1 mb-2 bg-white text-black"
                         style={{ width: "inherit" }}
                         type="text"
                         name="lastName"
@@ -107,7 +108,7 @@ const SellerSignupPage = () => {
                 <div className="w-full 2xl:w-[369px] lg:w-[320px]  m-auto">
                   <h1 className="text-white lg:text-black text-sm">Company Name </h1>
                   <input
-                    className="border  rounded-md py-1  nbpx-1 mb-2  w-full bg-white text-black"
+                    className="border border-black rounded-md py-1  nbpx-1 mb-2  w-full bg-white text-black"
                     type="text"
                     name="companyName"
                     placeholder="Company Name*"
@@ -119,7 +120,7 @@ const SellerSignupPage = () => {
                 <div className="w-full 2xl:w-[369px] lg:w-[320px]  m-auto">
                   <h1 className="text-white lg:text-black text-sm">Company Website </h1>
                   <input
-                    className="border  rounded-md py-1 px-1 mb-2 w-full bg-white text-black"
+                    className="border border-black rounded-md py-1 px-1 mb-2 w-full bg-white text-black"
                     type="text"
                     name="companyWebsite"
                     placeholder="Company Website*"
@@ -131,7 +132,7 @@ const SellerSignupPage = () => {
                 <div className="w-full 2xl:w-[369px] lg:w-[320px]  m-auto">
                   <h1 className="text-white lg:text-black text-sm">Email Address </h1>
                   <input
-                    className="border  rounded-md py-1 px-1 mb-2 w-full bg-white text-black"
+                    className="border border-black rounded-md py-1 px-1 mb-2 w-full bg-white text-black"
                     type="email"
                     name="emailAddress"
                     placeholder="Email Address*"
@@ -143,7 +144,7 @@ const SellerSignupPage = () => {
                 <div className="w-full 2xl:w-[369px] lg:w-[320px]  m-auto">
                   <h1 className="text-white lg:text-black text-sm">Password </h1>
                   <input
-                    className="border  rounded-md py-1 px-1 mb-2 w-full bg-white text-black"
+                    className="border border-black  rounded-md py-1 px-1 mb-2 w-full bg-white text-black"
                     type="password"
                     name="password"
                     placeholder="Password*"
@@ -155,7 +156,7 @@ const SellerSignupPage = () => {
                 <div className="w-full 2xl:w-[369px] lg:w-[320px]  m-auto">
                   <h1 className="text-white lg:text-black text-sm">Password Confirm</h1>
                   <input
-                    className="border  rounded-md py-1 px-1 mb-2 w-full bg-white text-black"
+                    className="border  border-black rounded-md py-1 px-1 mb-2 w-full bg-white text-black"
                     type="password"
                     name="passwordConfirm"
                     placeholder="Password Confirm*"

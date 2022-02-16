@@ -1,5 +1,7 @@
 import React from "react";
 import { SellerSigninModal } from "./SellerSigninModal";
+import logo_laptop from "../../assets/images/logo_laptop.png";
+import logo_mobile from "../../assets/images/logo_mobile.png";
 const Header1 = () => {
   return (
     <nav
@@ -10,11 +12,9 @@ const Header1 = () => {
         <div className="flex flex-row justify-start w-full">
           <div className="flex items-center">
             {/* <img src={logo} alt="logo"  className="cursor-pointer"  width={60} height={30} onClick={""}></img>                */}
-            <a
-              href="/"
-              className="font-bold text-3xl tracking-tight text-black mr-2"
-            >
-              LOGO
+            <a href='/' >
+                <img src={logo_laptop} alt="logo" className="hidden md:flex h-[44px] w-[150px] 2xl:h-[70px] 2xl:w-[258px] mr-[30px]"/>
+                <img src={logo_mobile} alt="logo" className="flex md:hidden h-[52px] w-[67px]"/>
             </a>
           </div>
         </div>
